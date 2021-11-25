@@ -34,6 +34,7 @@ class HomePage extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           FloatingActionButton(
+            heroTag: 'Increment tag',
             onPressed: () {
               Navigator.of(context).pushNamed(CustomRouter.incrementRoute);
             },
@@ -41,6 +42,7 @@ class HomePage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           FloatingActionButton(
+            heroTag: 'Decrement tag',
             onPressed: () {
               Navigator.of(context).pushNamed(CustomRouter.decrementRoute);
             },
